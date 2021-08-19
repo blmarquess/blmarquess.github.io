@@ -25,3 +25,7 @@ h2 {
     color:thistle;
     font-style: initial;
 }
+#cls {
+    font-style: inherit;
+    font-size: 32px;
+}
