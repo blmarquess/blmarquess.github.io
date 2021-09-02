@@ -1,25 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Marques</title>
-    <link type="text/css" href="/model/style.css" media="all" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5084150b6f.js" crossorigin="anonymous"></script>
+  <title>Bruno Marques * Project 01</title>
 </head>
+
 <body>
-    <h1>Minha pagina de portifolio</h1>
+  <header id="cabecalho">
+    <h1 id="titulo">Bruno Marques - Lessons Learned</h1>
+    <nav id="menu" class="navibar">
+      <ul class="lista-menu">
+        <li><a href="#"><strong> Home </strong></a></li>
+        <li><a href="#"><strong> About </strong></a></li>
+      </ul>
+    </nav>
+  </header>
 
-     <p class="cls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quis totam enim ab excepturi unde deleniti, accusamus nisi! Iusto dicta alias aperiam quos esse, consequatur harum veritatis quae ipsam soluta.</p>
-    <br><br>
-     <p class="cls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus a harum eligendi reiciendis in laboriosam numquam suscipit maxime corrupti, quo ut nam. Quas totam laboriosam minima nam? Blanditiis, temporibus alias?</p>
+  <main class="corpo">
+    <section class="profphoto">
+      <img id="minha_foto" src="./imgs/profilePhoto.jpg" width="200px" alt="minua_foto">
+    </section>
 
-    <h2>Criando novo conteudo Lorem</h2>
-    <p id="h2i">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae libero ducimus reprehenderit ipsa dolorum, consectetur nam adipisci deserunt explicabo nostrum dicta fuga veniam soluta necessitatibus. Rem consectetur nostrum iure ullam?</p>
-    <p class="cls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequuntur dignissimos, quod odio soluta sed numquam iusto, laboriosam consectetur voluptatum tempora? Minima, iusto. Saepe ratione, iusto nam incidunt maxime impedit.</p>
-<p id="vsc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestiae cumque cupiditate ipsa maxime rerum distinctio nesciunt sapiente adipisci quibusdam. At, qui reprehenderit. Impedit doloremque ad asperiores accusamus reiciendis eos!</p>
+    <div class="lists">
+      <p>
+      <h1>Lista de Skils</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Lições Aprendidas</th>
+            <th>Lições a Aprender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ol id="licoes_aprendidas">
+                <li><i class="fab fa-linux"></i> Unix</li>
+                <li><i class="fab fa-git-square"></i> Git</li>
+                <li><i class="fab fa-github"></i> GitHub</li>
+                <li><i class="fab fa-slack"></i> Slack</li>
+                <li><i class="fas fa-video"></i> Zoom+aspirina</li>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fas fa-people-arrows"></i> Empatia</li>
+                <li><i class="fas fa-universal-access"></i> Semantic Code</li>
+                <li><i class="fas fa-clipboard-list"></i> Logica de programação</li>
+              </ol>
+            </td>
 
+            <td>
+              <ul id="licoes_a_aprender">
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fas fa-file-code"></i> DOM</li>
+                <li><i class="fas fa-align-justify"></i> Forms</li>
+                <li><i class="fab fa-css3"></i> CSS Responsivo</li>
+                <li><i class="fab fa-js-square"></i> ES6</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fas fa-check-square"></i> Unit Tests</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-node-js"></i> Node</li>
+                <li><i class="fas fa-database"></i> SQL</li>
+            </td>
+          </tr>
+          </ul>
+        </tbody>
+      </table>
+    </p>
+    </div>
 
+    <div class="artigos">
+      <div class="lado-esquerdo">
+      <article>
+        <section class="lado-esquerdo"></section>
+          <p>
+            <h1>sobre seu aprendizado #loremipsum</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad amet reiciendis pariatur nesciunt
+            dicta laudantium atque nisi debitis, consequatur inventore voluptas facere quasi saepe est iusto ipsam.
+            Quaerat, laborum.Minus accusamus cumque id incidunt dolore inventore eius minima, nisi dolores
+            voluptatibus, assumenda molestias!
+          </p>
+        </section>
+      </article>
+    </div>
+      <div class="lado-direito">
+      <aside class="lado-direito">
+        <p>
+          <h2>Artigo #aside</h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae voluptatum eaque fugiat
+          sunt consectetur, excepturi odit. 
+        </p>
+      </aside>
+      </div>
+    </div>
 
+  </main>
+<div class="prefooter">
+
+</div>
+  <footer id="rodape" class="footer">
+    <span class="by">Trybe learned: <a href="https://github.com/blmarquess" target="_blank"> <i class="fab fa-github"></i> BLMARQUESS</a></span>
+  </footer>
 </body>
+
 </html>
