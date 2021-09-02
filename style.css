@@ -27,6 +27,9 @@ body {
   text-decoration: none;
 
 }
+#cabecalho h2 {
+  font-size: small;
+}
 
 #titulo {
   font-size: x-large;
