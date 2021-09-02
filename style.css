@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  font-size: 2vh;
+  color: rgba(14, 0, 0, 0.568);
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  padding: 0.2vmax;
+  text-align: center;
+  color: teal;
+  background-color: rgba(250, 155, 46, 0.897);
+  text-decoration: none;
+
+}
+
+#titulo {
+  font-size: x-large;
+}
+
+.lista-menu li {
+  float: left;
+  text-align: center;
+  padding: 0.3vmax 0;
+  margin: 0;
+  height: 4vh;
+  border-bottom: 0.9vh;
+}
+
+.lista-menu a {
+  padding: 0.8vmax;
+  text-decoration: none;
+  font-size: 2vh;
+  color: teal;
+
+}
+
+.lista-menu a:hover {
+  background-color: rgba(253, 251, 251);
+  color: rgba(250, 155, 46, 0.897);
+  border-bottom: solid rgba(253, 251, 251);
+}
+
+.corpo {
+  padding: 10vh 2vw;
+  margin: 0.5vmax;
+}
+
+#minha_foto {
+  border-radius: 95px;
+  border-top-left-radius: 50px;
+  padding: 0.4vmax;
+}
+
+.lists {
+  display: block;
+  padding: 1vmax;
+}
+
+table , tr , td , th {
+  margin: 2px;
+  border: 0;
+  padding: 1.2vmax;
+  text-align: left;
+  font-size: 3vmin;
+}
+
+.artigos {
+  line-height: 1.1;
+  margin: 2vh 0;
+  padding: 1vmin;
+  border: 0 2vh;
+  display: inline-block;
+  height: 20vmin 80vmax;
+}
+
+.lado-esquerdo {
+  width: 60vw;
+  float: left;
+}
+
+.lado-direito {
+  float: right;
+  width: 32vw;
+}
+
+.prefooter {
+  display: inline;
+  margin-top: 2vh;
+  border: 1vh;
+}
+
+.footer {
+  display: inline-block;
+  bottom: 0;
+  top: 85vmin;
+  padding: 2vh;
+  color: rgb(253, 251, 251);
+  background-color: rgb(6, 113, 122);
+  text-align: center;
+  width: 100vw;
+  height: 15vmin;
+}
+
+#rodape a {
+  padding: 2vh 0;
+  text-decoration: none;
+  color: rgb(253, 251, 251);
+}/* stylelint-disable-next-line rule */
