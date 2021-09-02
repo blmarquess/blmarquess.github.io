@@ -18,7 +18,7 @@ body {
 #cabecalho {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   padding: 0.2vmax;
   text-align: center;
@@ -115,7 +115,7 @@ table , tr , td , th {
   color: rgb(253, 251, 251);
   background-color: rgb(6, 113, 122);
   text-align: center;
-  width: 100vw;
+  width: 100%;
   height: 15vmin;
 }
 
