@@ -32,16 +32,23 @@ main {
   max-width: 45rem;
 }
 
+#criar-tarefa {
+  display: flex;
+  
+}
+
 .inputo {
   display: flex;
   border-radius: 0.4rem;
-  width: 32.4rem;
-  max-width: 36.4rem;
+  width: 100%;
+  max-width: 85rem;
   padding: 0.6em;
-  margin: 0;
+  margin: 2rem;
 }
 
 ol {
+  display: flex;
+  flex-direction: column;
   border-radius: 0.4rem;
   width: 100%;
   max-width: 45rem;
@@ -54,6 +61,8 @@ ol {
 
 li {
   clear: both;
+  width: 98%;
+  max-width: 43rem;
   margin: 0.3rem;
   padding: 0.6rem;
   border: solid 0.5px rgba(25, 27, 39, 0.247);
