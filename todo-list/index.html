@@ -16,26 +16,30 @@
       Clique duas vezes em um item para marcá-lo como completo
     </p>
   </header>
-  <main class="container container-md">
-    <input type="text" id="texto-tarefa" placeholder="Inserir Tarefa" required>
-    <button id="criar-tarefa" class="btn btn-light fa fa-check"> Criar</button>
-  </input>
-  </main>
-  <section container>
-      <article class="container-md mb-4">
-        <ol id="lista-tarefas"class="mb-4">
 
-          
+  <main class="">
+    <div class="lance">
+    <input type="text" id="texto-tarefa" placeholder="Inserir Tarefa" class="form-control inputo" required>
+    <span id="criar-tarefa" class="btn btn-light btn-b"> Criar</span>
+  </input>
+</div>
+  </main>
+
+  <section container>
+      <article class="container-md col-6">
+        <ol id="lista-tarefas"class="">
+
+
         </ol>
       </article>
 
-        <aside>
-        <button id="apaga-tudo" class="btn btn-light">Remover todas</button>
-        <button id="remover-selecionado"class="btn btn-light">Remover Selecionada</button>
-        <button id="remover-finalizados" class="btn btn-light">Remover Concluidas</button>
-        <button id="salvar-tarefas" class="btn btn-light">Salvar</button>
-        <button id="mover-cima" class="btn btn-light"><i class="bi bi-caret-up-fill " ></i></button>
-        <button id="mover-baixo" class=" btn btn-light"><i class="bi bi-caret-down-fill"></i></button>
+        <aside class="form-control lance">
+        <button id="apaga-tudo" class="btn btn-light btn-a warning">Remover todas</button>
+        <button id="remover-selecionado"class="btn btn-light btn-a">Remover Selecionada</button>
+        <button id="remover-finalizados" class="btn btn-light btn-a">Remover Concluidas</button>
+        <button id="salvar-tarefas" class="btn btn-light btn-a">Salvar</button>
+        <button id="mover-cima" class="btn btn-light btn-a"><i class="bi bi-caret-up-fill " ></i></button>
+        <button id="mover-baixo" class=" btn btn-light btn-a"><i class="bi bi-caret-down-fill"></i></button>
 
         </aside>    
   </section>
