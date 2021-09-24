@@ -1,0 +1,54 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+
+body {
+  background-color: rgb(185, 200, 214);
+  color: azure;
+  display: block;
+  text-align: center;
+  margin: 2rem;
+}
+
+input {
+  padding: 0.5rem;
+  background-color: white;
+  border: solid 1px rgb( 78 , 234 , 255);
+  border-radius: 3px;
+  border-collapse: rgb( 0 , 0 , 0 , 0.5 );
+  margin: 1rem;
+}
+
+ol {
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 45rem;
+  padding: 2em;
+  margin: 1em auto;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 0px .25rem 1rem rgba(black, .25);
+}
+
+li {
+  clear: both;
+  margin: 0.3rem;
+  padding: 0.6rem;
+  border: solid 0.5px rgba(204, 9, 9, 0.568);
+  border-radius: 0.7rem;
+  color:rgb(1, 50, 95);
+}
+
+.navi {
+  background-color: rgb(124 , 92 , 255 , 1);
+}
+
+.completed {
+  text-decoration :line-through;
+  background-color: rgba(rgba(44, 168, 44, 0.712), .15);
+  border-color: rgba(rgb(0, 128, 0), .2);
+  color: rgb(2, 97, 2);
+}
+
+.selected {
+  color: aliceblue;
+  background-color: rgba(192, 192, 192, 0.664);
+}
