@@ -488,10 +488,14 @@ footer {
     overflow-x: hidden;
   }
 
-  header .trybewarts-login {
+  header img {
     display: none;
+  }
+
+  header .trybewarts-login {
+    display: flex;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     border: 0;
     box-sizing: border-box;
     overflow-x: hidden;
