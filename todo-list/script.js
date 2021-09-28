@@ -130,7 +130,7 @@ btnDown.addEventListener('click', () => {
 });
 
 const input = document.querySelector('#texto-tarefa');
-input.addEventListener('keypress', (event) => { if (event.keyCode === 13){newTesc();} } );
+input.addEventListener('keyup', (event) => { if (event.keyCode === 13){newTesc();} } );
 
 // iniciar com base caso ja tenha
 window.onload = () => loadDB();

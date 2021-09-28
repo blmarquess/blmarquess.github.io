@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap') ;
+
+body {
+  background-color: white;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+section {
+  text-align: center;
+}
+
+article {
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: center;
+  width: 650px;
+  background-color: rgba(128, 128, 128, 0.082);
+  border-radius: 16px;
+  padding: 10px;
+  border-bottom: solid 3px white;
+}
+
+ul:hover {
+  border-bottom: solid 3px rgba(44, 44, 44, 0.267);
+}
+
+li {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  text-decoration: none;
+  list-style: none;
+  margin: 7px;
+  opacity: 100%;
+  box-shadow: 3px rgba(128, 128, 128, 0.082);
+}
+
+li:hover {
+  opacity: 64%;
+  box-shadow: 3px rgba(128, 128, 128, 0.322);
+  cursor: pointer;
+}
+
+.ball {
+  padding: 10px;
+  background-color: rgb(145, 170, 85);
+  border: solid 1px rgba(19, 18, 18, 0.137);
+}
+
+.placarStyle {
+  padding: 10px;
+}
+
+button {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 5px;
+  padding: 16px;
+  box-shadow: 3px rgba(128, 128, 128, 0.082);
+  border: solid 2px rgba(128, 128, 128, 0.082);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 56%;
+  border: solid 2px rgba(96, 189, 252, 0.562);
+}

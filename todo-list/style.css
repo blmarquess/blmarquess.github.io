@@ -68,6 +68,13 @@ li {
   border: solid 0.5px rgba(25, 27, 39, 0.247);
   border-radius: 0.6rem;
   color:rgb(2, 27, 49);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+li:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 aside{
@@ -108,4 +115,8 @@ aside{
   clear: both;
   margin: 0.3rem;
   padding: 0.6rem 2.2rem;
+}
+
+li{
+
 }
