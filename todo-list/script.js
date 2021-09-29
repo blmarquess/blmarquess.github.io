@@ -1,6 +1,6 @@
 // my codigs =)
 function salvar() {
-  const nodeDB = document.querySelector('ol');
+  const nodeDB = document.querySelector('ul');
   const localDB = nodeDB.innerHTML;
   localStorage.setItem('listDB', localDB);
 }
@@ -41,7 +41,7 @@ function observers() {
 // puxar base existente
 function loadDB() {
   const localDB = localStorage.getItem('listDB');
-  const node = document.querySelector('ol');
+  const node = document.querySelector('ul');
   node.innerHTML = localDB;
   observers();
 }
@@ -77,7 +77,7 @@ btnCriar.addEventListener('click', () => {
 // botoes para apagar todas as tarefas
 const btnClrAll = document.querySelector('#apaga-tudo');
 btnClrAll.addEventListener('click', () => {
-  const allLi = document.querySelector('ol');
+  const allLi = document.querySelector('ul');
   allLi.innerHTML = ''; salvar();
 });
 // apagar so selecionados
@@ -86,8 +86,12 @@ btnClrSelected.addEventListener('click', () => {
   const grup = document.querySelectorAll('li');
   grup.forEach((alvo) => {
     if (alvo.classList.contains('selected')) {
-      alvo.classList.add('animate__hinge');
-      alvo.remove();
+      alvo.classList = 'fila animate__animated animate__flash';
+      alvo.style.setProperty('--animate-delay', '2s');
+      alvo.style.setProperty('--animate-duration', '2s');
+      setTimeout(() => {
+        alvo.remove();
+      }, 1500);
     }
   });
   salvar();
@@ -96,7 +100,16 @@ btnClrSelected.addEventListener('click', () => {
 const btnClrDone = document.querySelector('#remover-finalizados');
 btnClrDone.addEventListener('click', () => {
   const list = document.querySelectorAll('li');
-  list.forEach((done) => { if (done.classList.contains('completed')) done.remove(); });
+  list.forEach((done) => {
+    if (done.classList.contains('completed')) {
+      done.classList = 'fila animate__animated animate__flash';
+      done.style.setProperty('--animate-delay', '2s');
+      done.style.setProperty('--animate-duration', '2s');
+      setTimeout(() => {
+        done.remove();
+      }, 1500);
+    }
+  });
   salvar();
 });
 // salva tarefas
@@ -107,7 +120,7 @@ btnSalve.addEventListener('click', salvar);
 // move iten up
 const btnUp = document.querySelector('#mover-cima');
 btnUp.addEventListener('click', () => {
-  const list = document.querySelector('ol');
+  const list = document.querySelector('ul');
   const nodeIten = document.querySelector('.selected');
   if (nodeIten !== null) {
     const previlNode = nodeIten.previousElementSibling;
@@ -119,7 +132,7 @@ btnUp.addEventListener('click', () => {
 // move iten down
 const btnDown = document.querySelector('#mover-baixo');
 btnDown.addEventListener('click', () => {
-  const list = document.querySelector('ol');
+  const list = document.querySelector('ul');
   const nodeIten = document.querySelector('.selected');
   if (nodeIten !== null) {
     const previlNode = nodeIten.nextElementSibling;
