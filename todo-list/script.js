@@ -30,6 +30,11 @@ function taskComplet(event) {
   }
   salvar();
 }
+
+function binExec() {
+
+}
+
 // adicionar observers para os itens da lista
 function observers() {
   const bloco = document.querySelectorAll('li');
@@ -37,7 +42,8 @@ function observers() {
     add.addEventListener('click', selectTask);
     add.addEventListener('dblclick', taskComplet);
   });
-}
+};
+
 // puxar base existente
 function loadDB() {
   const localDB = localStorage.getItem('listDB');
@@ -45,6 +51,9 @@ function loadDB() {
   node.innerHTML = localDB;
   observers();
 }
+
+const pre = '<label class="itenList">';
+const suf = '</label><i class="bi bi-trash-fill" id="remover-selecionado"></i>';
 
 // triar nova tarefa
 function newTesc() {
@@ -55,7 +64,7 @@ function newTesc() {
     return imputNode.focus();
   }
   const newTsc = document.createElement('li');
-  newTsc.innerText = imputNode.value;
+  newTsc.innerHTML = `${pre}${imputNode.value}$  ${suf}`;
   newTsc.classList = 'fila animate__animated animate__fadeInDown';
   newTsc.style.setProperty('--animate-delay', '2s');
   newTsc.style.setProperty('--animate-duration', '2s');
@@ -81,7 +90,7 @@ btnClrAll.addEventListener('click', () => {
   allLi.innerHTML = ''; salvar();
 });
 // apagar so selecionados
-const btnClrSelected = document.querySelector('#remover-selecionado');
+const btnClrSelected = document.querySelectorAll('#remover-selecionado');
 btnClrSelected.addEventListener('click', () => {
   const grup = document.querySelectorAll('li');
   grup.forEach((alvo) => {
@@ -96,6 +105,13 @@ btnClrSelected.addEventListener('click', () => {
   });
   salvar();
 });
+// apagar com bin-icon
+// function btnBIn() {
+//   const bins = querySelectorAll('.bi-trash-fill');
+//   bins.forEach((e) => e.addEventListener('click', (e) => e.remove(e)))
+// }
+// btnBIn();
+
 // apagar concluidos
 const btnClrDone = document.querySelector('#remover-finalizados');
 btnClrDone.addEventListener('click', () => {
@@ -146,4 +162,4 @@ const input = document.querySelector('#texto-tarefa');
 input.addEventListener('keyup', (event) => { if (event.keyCode === 13){newTesc();} } );
 
 // iniciar com base caso ja tenha
-window.onload = () => loadDB();
+  window.onload = () => loadDB();
