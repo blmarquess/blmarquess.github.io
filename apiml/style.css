@@ -109,9 +109,16 @@ https://codepen.io/fernandaassis-dg/pen/VdXLBP
   width: 100%;
 }
 
-.items, .content {
+.content {
   display: flex;
   flex-basis: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items {
+  display: flex;
+  flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
