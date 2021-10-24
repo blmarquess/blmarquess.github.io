@@ -109,7 +109,7 @@ https://codepen.io/fernandaassis-dg/pen/VdXLBP
   width: 100%;
 }
 
-.items {
+.items, .content {
   display: flex;
   flex-basis: 70%;
   flex-wrap: wrap;
@@ -181,7 +181,8 @@ https://codepen.io/fernandaassis-dg/pen/VdXLBP
 
 .cart {
   display: flex;
-  flex-basis: 30%;
+  flex-basis: 29%;
+  width: 100%;
   flex-flow: column wrap;
   background-color: rgba(241, 241, 238, 255);
   padding: 1rem;
