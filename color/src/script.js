@@ -125,6 +125,7 @@ function resetColor() {
 function reserGamer() {
   clerAll();
   newGamer();
+  score.placar = 0;
 }
 
 function nextGamer() {
