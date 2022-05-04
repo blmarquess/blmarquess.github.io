@@ -98,6 +98,16 @@ table , tr , td , th {
   float: left;
 }
 
+.lado-esquerdo ul {
+  list-style: none;
+}
+
+.lado-esquerdo li {
+  border-bottom: solid rgba(72, 72, 72, 0.616) 1px;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
 .lado-direito {
   float: right;
   width: 32vw;
